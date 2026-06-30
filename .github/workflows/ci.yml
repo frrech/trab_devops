@@ -7,7 +7,7 @@ jobs:
   setup:
     name: 🔧 Setup
     runs-on: ubuntu-latest
-  steps:
+    steps:
     - name: Checkout código
       uses: actions/checkout@v4
     - name: Listar arquivos
@@ -39,7 +39,7 @@ jobs:
         run: |
           mkdir dist
           cp index.html dist/
-          - name: Verificar dist
+      - name: Verificar dist
         run: ls -la dist
   deploy:
     name: 🚀 Deploy (informativo)
